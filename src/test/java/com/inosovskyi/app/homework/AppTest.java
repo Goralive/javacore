@@ -1,4 +1,4 @@
-package com.inosovskyi.app;
+package com.inosovskyi.app.homework;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
