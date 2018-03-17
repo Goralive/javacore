@@ -9,6 +9,6 @@ public class Lesson4Runner {
 
         primConv.floatToChar(2.6f);
         primConv.intToChar(22);
-        primConv.charToInt((char)22);
+        primConv.charToInt('S');
     }
 }
