@@ -1,43 +1,69 @@
 package com.inosovskyi.app.homework.lesson5;
 
-import java.util.Scanner;
-
 public class Calculator {
+    public int multiplication(int a, int b) {
 
-    public void getUserInput () {
-
-        Scanner sc = new Scanner(System.in);
-
-
-        System.out.println("Write a first number: ");
-        String firstStNumber = sc.nextLine();
-        System.out.println("Write a second number: ");
-        String secondStNumber = sc.nextLine();
-        System.out.println("Choose operation from / , * , - , + ");
-        String operatorSt = sc.nextLine();
-
-
-        Double firstNumber = Double.valueOf(firstStNumber);  // преобразовую тип из Str в double используя метод valueof, возможно лучше использовать конструктор
-        Double secondNumber = Double.valueOf(secondStNumber);
-
-
-
-        if (operatorSt.equals("*")){
-            System.out.println("Here is the result of the firstNumber * secondNumber = " + (firstNumber * secondNumber));
-        }
-        if (operatorSt.equals("-")){
-            System.out.println("Here is the result of the firstNumber - secondNumber = " + (firstNumber - secondNumber));
-        }
-        if (operatorSt.equals("+")){
-            System.out.println("Here is the result of the firstNumber + secondNumber = " + (firstNumber + secondNumber));
-        }
-        if (operatorSt.equals("/")){
-            System.out.println("Here is the result of the firstNumber / secondNumber = " + (firstNumber / secondNumber));
-        }
-        else {
-            System.out.println("Was chosen incorrect operator. Try again and choose between * / + -");
-        }
+        return a * b;
     }
 
-}
+    public int division(int a, int b) {
 
+        return a / b;
+    }
+
+    public int increment(int a, int b) {
+
+        return a + b;
+
+    }
+
+    public int deduction(int a, int b) {
+
+        return a - b;
+    }
+
+    public double degree(double a, double b) {
+
+        return Math.pow(a, b);
+    }
+
+    public double random() {
+
+        return Math.random();
+    }
+
+    public double round(double a, double b) {
+
+        double result = a + b;
+
+        return Math.round(result);
+    }
+
+    public double sqrt(int a) {
+
+        Double.valueOf(a);
+
+        return Math.sqrt(a);
+    }
+
+    public int mathMax(int a, int b) {
+
+        return Math.max(a, b);
+    }
+
+    public int mathMin(int a, int b) {
+
+        return Math.min(a, b);
+
+    }
+
+    public boolean trueStatement (){
+
+        boolean is = true;
+
+        return is;
+    }
+
+
+
+}

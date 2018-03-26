@@ -14,5 +14,6 @@ public class DataProviderMathFunctionsTest {
         public void dataProviderTestAdd(int argA, int argB, int expOut){
         MathFunc mathFunc = new MathFunc();
         Assert.assertEquals(expOut, mathFunc.multiply(argA, argB));
+
     }
 }
