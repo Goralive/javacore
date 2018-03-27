@@ -23,20 +23,20 @@ public class Menu {
 
         switch (userChoice) {
             case 0:
-
+                System.out.println("Good bye!");
+                System.exit(1);
             case 1:
                 System.out.println("You choose 1"); // placeholder
-                break;
+                Menu.menuLogic();
             case 2:
                 System.out.println("Circle area is " + CalculateCircleArea.squareCircle());
-                 break;
+                Menu.menuLogic();
             case 3:
                 System.out.println("You choose 3");
-                break;
+                Menu.menuLogic();
                 default:
                     System.out.println("Pick number from 0 - 5");
-                    break;
-
+                    Menu.menuLogic();
         }
     }
 }

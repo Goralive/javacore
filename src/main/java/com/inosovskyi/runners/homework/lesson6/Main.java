@@ -7,15 +7,13 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        int x = 0;
-        while (x < 1) {
-            try {
+
+           try {
                 Menu.menuLogic();
+
             } catch (NumberFormatException e) {
                 System.out.println("Seems you write not an Int or double, try again");
             }
         }
 
     }
-
-}
