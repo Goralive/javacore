@@ -26,13 +26,16 @@ public class Menu {
                 System.out.println("Good bye!");
                 System.exit(1);
             case 1:
-                System.out.println("You choose 1"); // placeholder
+                System.out.println(RightAngledTriangle.sideCalculation()); // placeholder
                 Menu.menuLogic();
             case 2:
                 System.out.println("Circle area is " + CalculateCircleArea.squareCircle());
                 Menu.menuLogic();
             case 3:
                 System.out.println("You choose 3");
+                Menu.menuLogic();
+            case 4:
+                System.out.println(NumberEvenOdd.logicEvenOrOdd());
                 Menu.menuLogic();
                 default:
                     System.out.println("Pick number from 0 - 5");

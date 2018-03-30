@@ -12,7 +12,8 @@ public class Main {
                 Menu.menuLogic();
 
             } catch (NumberFormatException e) {
-                System.out.println("Seems you write not an Int or double, try again");
+                System.out.println("Seems you write something strange, please try again");
+                Menu.menuLogic();
             }
         }
 
