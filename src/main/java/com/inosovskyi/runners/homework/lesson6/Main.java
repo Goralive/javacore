@@ -4,6 +4,7 @@ import com.inosovskyi.app.homework.lesson6.CalculateCircleArea;
 import com.inosovskyi.app.homework.lesson6.Menu;
 
 import java.io.IOException;
+import java.util.NoSuchElementException;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class Main {
            try {
                 Menu.menuLogic();
 
-            } catch (NumberFormatException e) {
+            } catch (NumberFormatException | NoSuchElementException e) {
                 System.out.println("Seems you write something strange, please try again");
                 Menu.menuLogic();
             }

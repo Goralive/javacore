@@ -1,7 +1,5 @@
 package com.inosovskyi.app.homework.lesson6;
 
-
-import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class CalculateCircleArea {
