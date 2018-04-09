@@ -69,6 +69,7 @@ public class CalculatorTest {
     public void degreeTest() {
 
         Assert.assertEquals(9.0, calculator.degree(3, 2), 1);
+
     }
 
     @Test
