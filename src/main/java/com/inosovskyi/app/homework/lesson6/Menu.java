@@ -19,9 +19,7 @@ public class Menu {
 
     public static void menuLogic() {
 
-        int userChoice = userInput();
-
-        switch (userChoice) {
+        switch (userInput()) {
             case 0:
                 System.out.println("Good bye!");
                 System.exit(1);
@@ -37,9 +35,9 @@ public class Menu {
             case 4:
                 System.out.println(NumberEvenOdd.logicEvenOrOdd());
                 Menu.menuLogic();
-                default:
-                    System.out.println("Pick number from 0 - 4");
-                    Menu.menuLogic();
+            default:
+                System.out.println("Pick number from 0 - 4");
+                Menu.menuLogic();
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.inosovskyi.runners.homework.lesson6;
+package com.inosovskyi.runners;
 
 import com.inosovskyi.app.homework.lesson6.CalculateCircleArea;
 import com.inosovskyi.app.homework.lesson6.Menu;
@@ -6,7 +6,7 @@ import com.inosovskyi.app.homework.lesson6.Menu;
 import java.io.IOException;
 import java.util.NoSuchElementException;
 
-public class Main {
+public class HomeTaskSix {
     public static void main(String[] args) {
 
            try {

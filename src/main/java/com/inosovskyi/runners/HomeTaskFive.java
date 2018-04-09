@@ -1,8 +1,8 @@
-package com.inosovskyi.runners.homework.lesson5;
+package com.inosovskyi.runners;
 
 import com.inosovskyi.app.homework.lesson5.CalculatorWithScanner;
 
-public class CalculatorWithScannerRunner {
+public class HomeTaskFive {
 
     public static void main(String[] args) {
 

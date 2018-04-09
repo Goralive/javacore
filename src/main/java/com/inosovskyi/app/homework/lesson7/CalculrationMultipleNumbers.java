@@ -1,5 +1,7 @@
 package com.inosovskyi.app.homework.lesson7;
 
+import com.inosovskyi.runners.HomeTaskSeven;
+
 import java.util.Scanner;
 
 public class CalculrationMultipleNumbers {
@@ -13,7 +15,7 @@ public class CalculrationMultipleNumbers {
                 String nextLine = sc.nextLine().toLowerCase();
                 if (nextLine.equals("exit")) {
                     System.out.println("Yours results is:\t" + temp);
-                    break;
+                    HomeTaskSeven.main(null);
                 } else {
                     int multiplay = Integer.parseInt(nextLine);
                     temp += multiplay;
