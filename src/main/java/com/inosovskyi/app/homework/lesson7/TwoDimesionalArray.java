@@ -14,7 +14,7 @@ public class TwoDimesionalArray {
         }
         for (int i = 0; i < twoDementionalArray.length; i++) {
             for (int j = 0; j < twoDementionalArray[i].length; j++) {
-                System.out.print(twoDementionalArray[i][j] + " \t");
+                System.out.print(twoDementionalArray[i][j]);
             }
             System.out.println(" ");
         }
