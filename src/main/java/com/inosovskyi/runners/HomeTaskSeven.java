@@ -1,8 +1,6 @@
 package com.inosovskyi.runners;
 
 import com.inosovskyi.app.homework.lesson7.*;
-import com.inosovskyi.app.homework.lesson9.PalindromeStringBuffer;
-import com.inosovskyi.runners.homework.lesson7.RunnerRandomMaxMinNumber;
 
 import java.util.Scanner;
 
