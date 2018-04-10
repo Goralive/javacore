@@ -15,7 +15,7 @@ public class CalculrationMultipleNumbers {
                 String nextLine = sc.nextLine().toLowerCase();
                 if (nextLine.equals("exit")) {
                     System.out.println("Yours results is:\t" + temp);
-                    HomeTaskSeven.main(null);
+                    LessonSevenMenu.menu();
                 } else {
                     int multiplay = Integer.parseInt(nextLine);
                     temp += multiplay;
