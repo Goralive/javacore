@@ -1,20 +1,17 @@
 package com.inosovskyi.app.homework.lesson6;
 
-import java.util.Scanner;
+import com.inosovskyi.app.homework.lesson5.UserInputScanner;
 
 public class Menu {
 
     public static int userInput() {
-
-        Scanner sc = new Scanner(System.in);
-
         System.out.println("\nChoose (1) if you want to start right-angled triangle program");
         System.out.println("Choose (2) if you want to start calculate circle area program");
         System.out.println("Choose (3) if you want to define what number is bigger/smaller");
         System.out.println("Choose (4) if you want to define, if the number is even or odd");
         System.out.println("Choose (0) to exit the program");
 
-        return Integer.parseInt(sc.nextLine());
+        return Integer.parseInt(UserInputScanner.userString());
     }
 
     public static void menuLogic() {

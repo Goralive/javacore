@@ -1,24 +1,22 @@
 package com.inosovskyi.app.homework.lesson7;
 
-import com.inosovskyi.runners.HomeTaskSeven;
-
-import java.util.Scanner;
+import com.inosovskyi.app.homework.lesson5.UserInputScanner;
 
 public class CalculrationMultipleNumbers {
 
     public static void userInput() {
-        Scanner sc = new Scanner(System.in);
+
         int temp = 0;
         try {
             while (true) {
                 System.out.println("Write a next int or type exit to finish");
-                String nextLine = sc.nextLine().toLowerCase();
+                String nextLine = UserInputScanner.userString().toLowerCase();
                 if (nextLine.equals("exit")) {
                     System.out.println("Yours results is:\t" + temp);
                     LessonSevenMenu.menu();
                 } else {
-                    int multiplay = Integer.parseInt(nextLine);
-                    temp += multiplay;
+
+                    temp += Integer.parseInt(nextLine);
                 }
             }
         } catch (Exception e) {

@@ -57,13 +57,12 @@ public class Calculator {
 
     }
 
-    public boolean trueStatement (){
+    public boolean trueStatement() {
 
         boolean is = true;
 
         return is;
     }
-
 
 
 }

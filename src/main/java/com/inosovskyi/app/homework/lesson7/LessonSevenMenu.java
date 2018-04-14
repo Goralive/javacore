@@ -1,18 +1,16 @@
 package com.inosovskyi.app.homework.lesson7;
 
-import com.inosovskyi.runners.HomeTaskSeven;
-
-import java.util.Scanner;
+import com.inosovskyi.app.homework.lesson5.UserInputScanner;
 
 public class LessonSevenMenu {
 
     static public void menu () {
         System.out.println("\nGreetigs, here is the hometask #7\nPick number from 1-7, if you want exit, pick 0\n");
         System.out.println("Pick\t1 if you want to see task A\nPick\t2 if you want to see task B\nPick\t3 if you want to see task C\nPick\t4 if you want to see task D\nPick\t5 if you want to see task E\nPick\t6 if you want to see task F\nPick\t7 if you want to see task G\n");
-        Scanner sc = new Scanner(System.in);
+
 
         try {
-            switch (Integer.parseInt(sc.nextLine())) {
+            switch (Integer.parseInt(UserInputScanner.userString())) {
                 case 0:
                     System.exit(1);
                 case 1:
