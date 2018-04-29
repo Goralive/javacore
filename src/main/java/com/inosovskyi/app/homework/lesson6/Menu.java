@@ -4,6 +4,7 @@ import com.inosovskyi.app.homework.lesson5.UserInputScanner;
 
 public class Menu {
 
+
     public static int userInput() {
         System.out.println("\nChoose (1) if you want to start right-angled triangle program");
         System.out.println("Choose (2) if you want to start calculate circle area program");

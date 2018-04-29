@@ -1,4 +1,4 @@
-package com.inosovskyi.runners;
+package com.inosovskyi.runners.homework;
 
 import com.inosovskyi.app.homework.lesson9.MenuPalindrom;
 
