@@ -6,8 +6,6 @@ import com.inosovskyi.app.homework.lesson12.PalindromMagic;
 import com.inosovskyi.app.homework.lesson12.RandomArrayNumbers;
 import com.inosovskyi.app.homework.lesson5.UserInputScanner;
 
-import java.io.File;
-
 public class HomeTaskTwelve {
     public static void main(String[] args) {
         System.out.println("Hello: ");
