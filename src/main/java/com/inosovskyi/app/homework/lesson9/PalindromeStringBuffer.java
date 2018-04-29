@@ -4,9 +4,8 @@ public class PalindromeStringBuffer {
 
     static public void checkPalindrome(String palindrome) {
 
-        StringBuffer stringBuffer = new StringBuffer(palindrome);
-        StringBuffer quote2 = stringBuffer.reverse();
-        if (palindrome.equalsIgnoreCase(String.valueOf(quote2))) {
+        StringBuffer stringBuffer = new StringBuffer(palindrome).reverse();
+        if (palindrome.equalsIgnoreCase(String.valueOf(stringBuffer))) {
             System.out.println("It's a palindrome");
         } else {
             System.out.println("It's not a palindrome");

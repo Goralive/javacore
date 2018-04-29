@@ -1,25 +1,33 @@
 package com.inosovskyi.runners.homework;
 
-import com.inosovskyi.app.homework.lesson12.RandomArrayBuffer;
+import com.inosovskyi.app.homework.lesson12.ConsoleWord;
+import com.inosovskyi.app.homework.lesson12.MenuEnum;
+import com.inosovskyi.app.homework.lesson12.PalindromMagic;
+import com.inosovskyi.app.homework.lesson12.RandomArrayNumbers;
+import com.inosovskyi.app.homework.lesson5.UserInputScanner;
 
 import java.io.File;
-import java.io.IOException;
 
 public class HomeTaskTwelve {
     public static void main(String[] args) {
-        RandomArrayBuffer arrayBuffer = new RandomArrayBuffer();
-       try {
-           arrayBuffer.randomIntArray();
-           arrayBuffer.readNumbersFromFile();
-           String currentDir = System.getenv("buffer.path.hometask");
+        System.out.println("Hello: ");
 
-           File file = new File(currentDir);
-           System.out.println(file.getAbsolutePath());
-       } catch (IOException e){
-           System.out.println("Something go wrong try again");
-          e.printStackTrace();
-
-       }
+        switch (MenuEnum.commandToMenu(Integer.parseInt(UserInputScanner.userString()))) {
+            case EXIT: //Choose 0
+                System.out.println("Good bye");
+                System.exit(1);
+            case PALINDROME: //Choose 1
+                new PalindromMagic().readFile("src\\main\\resources\\palindrome.txt","src\\main\\resources\\palindromeResults.txt");
+                break;
+            case INT_NUMBERS: //Choose 2
+                RandomArrayNumbers arrayBuffer = new RandomArrayNumbers();
+                arrayBuffer.randomIntArray(20);
+                arrayBuffer.writeSortNumbers(arrayBuffer.readNumbersFromFile(), "W:\\javacore\\src\\main\\resources\\results.txt");
+                break;
+            case WORD: // 3
+                ConsoleWord consoleWord = new ConsoleWord();
+                consoleWord.writeIntoFile(consoleWord.nameOfFile());
+        }
 
     }
 }
