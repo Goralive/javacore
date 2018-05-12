@@ -1,6 +1,7 @@
 package com.inosovskyi.app.classwork.lesson16;
 
-public abstract class Mashine {
+
+public abstract class Mashine  {
     public Mashine() {
 
     }
@@ -12,4 +13,7 @@ public abstract class Mashine {
     public abstract String gear(String gear);
 
     public abstract int ram(int ram);
+
+
 }
+

@@ -1,5 +1,7 @@
 package com.inosovskyi.app.classwork.lesson16;
 
+import java.util.Comparator;
+
 public class Porsche extends Mashine {
     private double cubic;
     private String gear;

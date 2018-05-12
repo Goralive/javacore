@@ -1,4 +1,4 @@
 Moom - It's a palindrome
 aBbA - It's a palindrome
 1 - It's a palindrome
-laog - It's a palindrome
+goal - Not a palindrome

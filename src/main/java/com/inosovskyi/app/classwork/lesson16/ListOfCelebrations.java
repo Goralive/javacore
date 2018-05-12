@@ -11,6 +11,7 @@ public enum ListOfCelebrations {
 
         this.mounth = mounth;
         this.celebration = celebration;
+
     }
     public int getDay() {
         return day;
